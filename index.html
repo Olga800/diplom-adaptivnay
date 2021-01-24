@@ -257,12 +257,13 @@
             </article> 
           </div>
           <aside class="sidebar">
-            <section class="sidebar-blocks">
+            <div class="form-dlok">
+             <section class="sidebar-block">
               <h3 class="sidebar-block-title">Новые посты</h3>
               <div class="sidebar-post-items">
                 <div class="sidebar-post-item">
                   <div class="sidebar-post-image">
-                    <img src="images/2.jpg" alt="Силуэт человека а песчаном пляже">
+                    <img src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="">
                   </div>
                   <div class="sidebar-item-time-header">
                     <time datetime="2019-06-10" class="post-datetime">14 июня 2019</time>
@@ -275,7 +276,7 @@
               <div class="sidebar-post-items">
                 <div class="sidebar-post-item">
                   <div class="sidebar-post-image">
-                    <img src="images/151.jpg" alt="Девушка стоит на голове на берегу моря, йога">
+                    <img src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg" alt="Девушка стоит на голове на берегу моря, йога">
                   </div>
                   <div class="sidebar-item-time-header">
                     <time datetime="2019-06-10" class="post-datetime">14 июня 2019</time>
@@ -288,7 +289,7 @@
               <div class="sidebar-post-items">
                 <div class="sidebar-post-item">
                   <div class="sidebar-post-image">
-                    <img src="images/45.jpg" alt="Кресло в интерьере на фоне окна">
+                    <img src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg" alt="Кресло в интерьере на фоне окна">
                   </div>
                   <div class="sidebar-item-time-header">
                     <time datetime="2019-06-10" class="post-datetime">14 июня 2019</time>
@@ -301,7 +302,7 @@
               <div class="sidebar-post-items">
                 <div class="sidebar-post-item">
                   <div class="sidebar-post-image">
-                    <img src="images/501.jpg" alt="Стол сервированный к обеду в светлых тонах">
+                    <img src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg" alt="Стол сервированный к обеду в светлых тонах">
                   </div>
                   <div class="sidebar-item-time-header">
                     <time datetime="2019-06-10" class="post-datetime">14 июня 2019</time>
@@ -314,7 +315,7 @@
               <div class="sidebar-post-items">
                 <div class="sidebar-post-item">
                   <div class="sidebar-post-image">
-                    <img src="images/7.jpg" alt="Три девушки с длинными волосами в платьях стоят спиной">
+                    <img src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg" alt="Три девушки с длинными волосами в платьях стоят спиной">
                   </div>
                   <div class="sidebar-item-time-header">
                     <time datetime="2019-06-10" class="post-datetime">14 июня 2019</time>
@@ -325,8 +326,6 @@
                 </div>
               </div>
             </section>
-          </aside>
-          <div class="form-dlok">
             <section class="sidebar-block">
               <form class="search-form">
                 <label class="search-group">
@@ -338,6 +337,7 @@
                 </button>
               </form>
             </section>
+
             <section class="sidebar-block">
               <h3 class="sidebar-block-title">Рассылка</h3>
               <form class="subscribe-form">
@@ -383,7 +383,6 @@
                 </li>
                 <li class="sidebar-tag">
                   <a href="#0" class="sidebar-tag-link">Health</a>
-
                 </li>
               </ul>
             </section>
@@ -418,43 +417,55 @@
                 <li class="sidebar-theme">
                   <a href="#0" class="sidebar-theme-link">Йога</a>
                   <span class="sidebar-theme-item">8</span>
+
                 </li>
               </ul>
             </section>
-          </div>
+          </aside>
         </div>
-      </main>
-      <div class="container_shop">
-        <h2 class="shop-title">Наши изделия</h2>
-        <div class="shop-container">
-          <article class="shop-card">
-            <div class="shop-card-preview"> <img class="shop-card-img" src="images/shop-item-desk1.jpg" alt="Подушка розовая с надписью черной"></div>
-            <div class="shop-card-container">
-
-              <h3 class="shop-card-title">Подушки на диван</h3>
-              <p>Набор из двух подушек с модными принтами. Видео о создании <a class="shop-link" href="#">здесь</a>.</p>
-              <div class="shop-card-order">
-                <div class="price">
-                  <div class="price-box">
-                    <div class="old-price">1000 </div>
-                    <div class="old-price price-mark">₽</div>
-                  </div>
-                  <div class="price-box">
-                    <div class="actual-price">800</div>
-                    <div class="actual-price price-mark">₽</div>
-                  </div>
+      </aside>
+    </main>
+    <div class="container_shop">
+      <h2 class="shop-title">Наши изделия</h2>
+      <div class="shop-container">
+        <article class="shop-card">
+          <div class="shop-card-preview"> 
+            <img class="shop-card-img" 
+            src="images/shop-item-desk1.jpg"
+            srcset="images/shop-item-tablet1.jpg"
+            srcset="images/shop-item-mobile1.jpg"alt="Подушка розовая с надписью черной">
+          </div>
+          <div class="shop-card-container">
+            <h3 class="shop-card-title">Подушки на диван</h3>
+            <p>Набор из двух подушек с модными принтами. Видео о создании <a class="shop-link" href="#">здесь</a>.</p>
+            <div class="shop-card-order">
+              <div class="price">
+                <div class="price-box">
+                  <div class="old-price">1000 </div>
+                  <div class="old-price price-mark">₽</div>
                 </div>
-                <button class="button shop-button" type="button">В магазин</button>
-              </article>
-              <article class="shop-card">
-                <div class="shop-card-preview"> <img class="shop-card-img" src="images/shop-item-desk2.jpg" alt="Кукла тряпичная Зайчик и книги на столе"></div>
+                <div class="price-box">
+                  <div class="actual-price">800</div>
+                  <div class="actual-price price-mark">₽</div>
+                </div>
+              </div>
+              <button class="button shop-button" type="button">В магазин</button>
+            </article>
+            <article class="shop-card">
+              <div class="shop-card-preview">
+                <img class="shop-card-img" 
+                src="images/shop-item-desk2.jpg" 
+                srcset="images/shop-item-tablet2.jpg"
+                srcset="images/shop-item-mobile2.jpg"
+                alt="Кукла тряпичная Зайчик и книги на столе">
+              </div>
+
                 <div class="shop-card-container">
                   <h3 class="shop-card-title">Кукла «Зайчик»</h3>
                   <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="shop-link" href="#">весенняя серия постов</a> в блоге и несколько подкастов. </p>
                   <div class="shop-card-order">
                     <div class="price">
                       <div class="price-box">
-
                       </div>
                       <div class="price-box">
                         <div class="actual-price">3500</div>
@@ -463,8 +474,9 @@
                     </div>
                     <button class="button shop-button" type="button">В магазин</button>
                   </article>
+                  
                   <article class="shop-card">
-                    <div class="shop-card-preview"> <img class="shop-card-img" src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка на столе"></div>
+                    <div class="shop-card-preview"> <img class="shop-card-img" src="images/shop-item-desk3.jpg"srcset="images/shop-item-tablet3.jpg" srcset="images/shop-item-mobile3.jpg" alt="Шестиугольная рамка на столе"></div>
                     <div class="shop-card-container">
                       <h3 class="shop-card-title">Шестиугольная рамка</h3>
                       <p>Необычная рамка для украшения дома из видео<a class="shop-link" href="#"> «Как сделать рамку из подручных средств за 30 минут»</a>.</p>
@@ -481,8 +493,8 @@
                         </div>
                         <button class="button shop-button" type="button">В магазин</button>
                       </article>
-                    </div>
-                  </div>
+                  
+                <div>
                   <footer class="container footer-block">
                     <address class="address-block">
                       <ul class="socials">
@@ -519,5 +531,6 @@
                       </a>
                     </div>
                   </footer>
-                </body>
-                </html>
+                </div>
+              </body>
+              </html>
