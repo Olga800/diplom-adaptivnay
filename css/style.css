@@ -80,7 +80,7 @@ input: focus {
 
 .page-header {
   background-color: #000000;
-  background-image: url("images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
