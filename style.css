@@ -213,13 +213,24 @@ input: focus {
   display: flex;
   width: 100%;
   max-width: 1660px;
-  height: 300px;
   flex-direction: row;
   margin: 0 auto;
+  height: 345px;
 }
+
 
 .shopp-card-container {
   display: flex;
+}
+
+.shopp-card-container::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .shopp-card-one {
@@ -228,16 +239,7 @@ input: focus {
   width: 25%;
   margin-left: 25px;
 }
-.shopp-card-one::after {
-  content: "";
-  background-color: black;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+
 
 .shopp-card-two {
   color: #000000;
@@ -263,11 +265,11 @@ input: focus {
 .shopp-card {
   display: flex;
   width: 90%;
-  top: 120px;
+  top: 150px;
   margin-left: 25px;
   position: relative;
   z-index: 3;
-  border: 3px solid #b59f5b;
+  border: 4px solid #b59f5b;
   padding-left: 15px;
   padding-right: 10px;
   margin-left: 10px;
@@ -280,19 +282,18 @@ input: focus {
   font-family: "OpenSansBold", sans-serif;
   text-transform: uppercase;
   color: #b59f5b;
-  z-index: 4;
+  z-index: 3;
   position: relative;
 }
 
 .post-item-tags {
-  display: flex;
   padding-right: 10px;
   font-size: 18px;
   font-family: "OpenSansBold";
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  z-index: 4;
+  z-index: 3;
   position: relative;
 }
 
@@ -324,7 +325,6 @@ a {
 }
 
 .shopp-card-title {
-  display: inline-block;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
@@ -519,11 +519,9 @@ a {
   font-size: 18px;
   color: #0f0d0e;
   text-align: center;
-
   font-family: "OpenSansBold";
   font-weight: 700;
   margin-top: 20px;
-
 }
 
 
@@ -546,7 +544,6 @@ a {
 .sidebar-post-items:nth-child(n + 2) {
   margin-top: 20px;
 }
-
 
 .sidebar-post-item {
   display: flex;
@@ -592,7 +589,6 @@ a {
   line-height: 40px;
   display: inline-block;  
 }
-
 
 .search-form {
   display: flex;
@@ -676,7 +672,6 @@ a {
   font-size: 20px;
   line-height: normal;
 }
-
 
 .sidebar-tag {
   border: 3px solid #eeeeee;
@@ -780,17 +775,8 @@ a {
   padding-right: 70px;
   margin-left: 45px;
   position: relative;
-  top:-40px;
 }
-.shop-card-preview {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 30px 20px;
-}
-.shop-card-img {
-  width: 100%;
-  margin-left: 30px;
-}
+
 .shop-card-title {
   font-size: 20px;
   font-weight: 700;
@@ -816,8 +802,6 @@ a {
   margin-right: 20px;
 }
 .button-shop-button {
-}
-.button {
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: right 90% bottom 90% ;
@@ -833,7 +817,7 @@ a {
   width: 48px;
   background-position: center;
 }
-.button:hover {
+.button-shop-button:hover {
   background-color: #323232;
 }
 
@@ -859,7 +843,7 @@ a {
   text-decoration: line-through;
 }
 
-.footer-block{
+.footer-block {
  position: relative;
  height : 50px;
  bottom : 0;
