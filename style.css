@@ -182,17 +182,20 @@ input: focus {
 .trend {
   display: flex;
   width: 100%;
-  align-items: center; 
-  justify-content: center
+  height: 345px;
+  margin: 0 auto;
 }
 
 .trend-title {
-  display: grid;
-  font-size: 22px;
-  font-family: "OpenSansBold";
-  font-weight: 700;
-  line-height: 1.2;
-  text-transform: uppercase;
+ display: flex; 
+ font-size: 22px;
+ font-family: "OpenSansBold";
+ font-weight: 700;
+ line-height: 1.2;
+ text-transform: uppercase;
+ align-items: center; 
+ justify-content: center;
+ margin: 0 auto;
 }
 
 .trend-title::after {
@@ -208,67 +211,23 @@ input: focus {
 .shopp-container {
   display: flex;
   width: 100%;
+  height: auto;
+}
+
+.trend__card {
+  color: #000000;
+  width: 25%;
+  margin-left: 25px;
+  display: flex;
+  position: relative;
+  z-index: -1;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: row;
-  margin: 0 auto;
   justify-content: flex-end;
-}
-
-
-.shopp-card-container {
-  display: flex;
-}
-.shopp-card::after
-.shopp-card-container::after
-.green::after {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.shopp-card-one {
-  color: #000000;
-  background-image: url("../images/trend1.jpg");
-  width: 25%;
-  margin-left: 25px;
-  display: flex;
-}
-
-
-.shopp-card-two {
-  color: #000000;
-  background-image: url("../images/trend2.jpg");
-  width: 25%;
-  margin-left: 25px;
-  display: flex;
-
-}
-.shopp-card-three {
-  color: #000000;
-  background-image: url("../images/trend3.jpg");
-  width: 25%;
-  margin-left: 25px;
-  display: flex;
-}
-
-.shopp-card-four {
-  color: #000000;
-  background-image: url("../images/trend4.jpg");
-  width: 25%;
-  margin-left: 25px;
-  display: flex;
-}
-
-.shopp-card {
-  display: flex;
-  width: 90%;
-  top: 150px;
   margin-left: 25px;
   position: relative;
-  z-index: 3;
   border: 4px solid #b59f5b;
   padding-left: 15px;
   padding-right: 10px;
@@ -276,6 +235,36 @@ input: focus {
   margin-right: 30px;
   padding-top: 15px;
   font-size: 16px;
+}
+
+.trend__card::after {
+  content: '';
+  width: 100%
+  height: auto;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.trend__card:nth-child(1){
+  background-image: url("../images/trend1.jpg");
+}
+
+.trend__card:nth-child(2){
+  background-image: url("../images/trend2.jpg");
+}
+
+.trend__card:nth-child(3) {
+  background-image: url("../images/trend3.jpg");
+}
+
+.trend__card:nth-child(4){
+  background-image: url("../images/trend4.jpg");
 }
 
 .header-post {
