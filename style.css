@@ -216,6 +216,7 @@ input: focus {
   flex-direction: row;
   margin: 0 auto;
   height: 345px;
+  justify-content: flex-end;
 }
 
 
@@ -223,7 +224,7 @@ input: focus {
   display: flex;
 }
 
-.shopp-card-container::after {
+.green::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
