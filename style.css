@@ -182,21 +182,17 @@ input: focus {
 .trend {
   display: flex;
   width: 100%;
-  max-width: 1660px;
-  height: auto;  
   align-items: center; 
-  justify-content: center;
+  justify-content: center
 }
 
 .trend-title {
-  display:grid;
+  display: grid;
   font-size: 22px;
   font-family: "OpenSansBold";
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  align-items: center; 
-  justify-content: center;
 }
 
 .trend-title::after {
@@ -212,10 +208,8 @@ input: focus {
 .shopp-container {
   display: flex;
   width: 100%;
-  max-width: 1660px;
   flex-direction: row;
   margin: 0 auto;
-  height: 345px;
   justify-content: flex-end;
 }
 
@@ -223,7 +217,8 @@ input: focus {
 .shopp-card-container {
   display: flex;
 }
-
+.shopp-card::after
+.shopp-card-container::after
 .green::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
@@ -239,6 +234,7 @@ input: focus {
   background-image: url("../images/trend1.jpg");
   width: 25%;
   margin-left: 25px;
+  display: flex;
 }
 
 
@@ -247,6 +243,7 @@ input: focus {
   background-image: url("../images/trend2.jpg");
   width: 25%;
   margin-left: 25px;
+  display: flex;
 
 }
 .shopp-card-three {
@@ -254,6 +251,7 @@ input: focus {
   background-image: url("../images/trend3.jpg");
   width: 25%;
   margin-left: 25px;
+  display: flex;
 }
 
 .shopp-card-four {
@@ -261,6 +259,7 @@ input: focus {
   background-image: url("../images/trend4.jpg");
   width: 25%;
   margin-left: 25px;
+  display: flex;
 }
 
 .shopp-card {
