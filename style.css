@@ -497,8 +497,8 @@ input: focus {
   margin-top: 20px;
 }
 .visually-hidden {
-  width: 1px;
-  height: 1px;
+  width: 3px;
+  height: 3px;
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;  
   border-radius:0;
@@ -615,6 +615,7 @@ input: focus {
 
 .search-button {
   height: 48px;
+  width: 48px;
   background-color: #b59f5b;
   border: none;
   vertical-align: baseline;
@@ -818,6 +819,7 @@ input: focus {
   background-position: right 90% bottom 90% ;
   background-color: #b59f5b;
   height: 48px;
+  font-size: 20px;
   border: 0;
   font-family: inherit;
   font-weight: 700;
@@ -831,7 +833,7 @@ input: focus {
 .button-shop-button:hover {
   background-color: #323232;
 
-  border: 3px solid #b59f5b;
+  border: 10px solid #b59f5b;
 }
 
 .price {
