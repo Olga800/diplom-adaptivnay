@@ -1,44 +1,24 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "OpenSansReg";
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), 
+  url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+  url("../fonts/OpenSans-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: "OpenSansReg";
-  src: url("../fonts/OpenSans-Regular.woff");
-  font-weight: 400;
+  font-family: "OpenSansBold";
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"),
+  url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+  url("../fonts/OpenSans-Bold.ttf") format("ttf");
+  font-weight: bold;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "OpenSansReg";
-  src: url("../fonts/OpenSans-Regular.woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSansReg";
-  src: url("../fonts/OpenSans-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSansBold";
-  src: url("../fonts/OpenSans-Bold.woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSansBold";
-  src: url("../fonts/OpenSans-Bold.woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSansBold";
-  src: url("../fonts/OpenSans-Bold.ttf");
-  font-weight: 700;
-  font-style: normal;
-}
 h1,
 h2,
 h3,
@@ -73,7 +53,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-top: 20px;
 }
 
 input: focus {
@@ -113,7 +92,7 @@ input: focus {
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 0px;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .page-header-menu {
@@ -166,7 +145,7 @@ input: focus {
   text-decoration: none;
   font-family: "OpenSansReg", sans-serif;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 14px;
   line-height: normal;
 }
 
@@ -176,10 +155,8 @@ input: focus {
 }
 .main {
   width: 80%;
-  max-width: 1200px;
   height: auto; 
   margin: 0 auto;
-  margin-right: 156px;
 }
 
 .trend {
@@ -263,7 +240,7 @@ input: focus {
 
 .frame {
   margin-bottom: 30px;
-  margin-top: 200px;
+  margin-top: 120px;
   margin-right: 20px;
   margin-left: 30px;
   position: relative;
@@ -286,7 +263,7 @@ input: focus {
 
 .post-item-tags {
   display: flex;
-  font-size: 24px;
+  font-size: 14px;
   font-family: "OpenSansBold";
   font-weight: 700;
   line-height: 2;
@@ -303,7 +280,7 @@ input: focus {
 
 .item-tags-link {
   flex-wrap: wrap;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.2;
   padding-bottom: 5px;
   text-decoration: none;
@@ -324,7 +301,7 @@ input: focus {
 
 .shopp-card-title {
   display: block;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 2;
   text-transform: uppercase;
@@ -344,16 +321,13 @@ input: focus {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  max-width: 1660px;
-  margin: 0 auto; 
-  margin-top: 30px;
+  margin: 0 auto;
 }
 .first-page {
+  width: 70%;
   display: flex;
-  width: 67%;
   flex-direction: column;
   margin: 0 auto; 
-  margin-top: 130px;
 }
 
 .post-item {
@@ -380,7 +354,7 @@ input: focus {
   font-family: "OpenSansBold", sans-serif;
   text-transform: uppercase;
   color: #b59f5b;
-  font-size: 24px;
+  font-size: 14px;
   margin-bottom: 10px;
   font-family: "OpenSansBold";
   font-weight: 700;
@@ -412,7 +386,7 @@ input: focus {
 }
 
 .item-tag-link {
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.8;
   text-decoration: none;
   color: #b59f5b;
@@ -429,32 +403,32 @@ input: focus {
 .post-title {
   font-family: "OpenSansBold", sans-serif;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.1;
-  margin-top: 10px;
-  margin-left: 15px;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 .post-title-link {
   text-decoration: none;
   color: #0f0d0e;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.6;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 .post-after-title {
   display: flex;
   font-style: normal;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.4;
   margin-left: 15px;
 }
 
 .post-datetime {
   color: #989898;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.4;
   font-family: "OpenSansReg", sans-serif;
   margin-right: 10px;
@@ -481,7 +455,7 @@ input: focus {
 
 .post-content-text {
   font-family: "OpenSansReg", sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.8;
   text-decoration: none;
   margin-bottom: 0px;
@@ -508,23 +482,22 @@ input: focus {
   border-radius:0;
   -webkit-appearance:none;
   -moz-appearance:none;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.8;
 }
 
 .sidebar-block {
   display: block;
-  margin-top: 60px;
 }
 
 .sidebar-block-title {
   font-family: "OpenSansBold", sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   color: #0f0d0e;
   text-align: center;
   font-family: "OpenSansBold";
   font-weight: 700;
-  margin-top: 130px;
+  margin-top: 40px;
 }
 
 
@@ -570,7 +543,7 @@ input: focus {
 }
 
 .sidebar-item-title {
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.5;
   font-family: "OpenSansBold", sans-serif;
   margin-bottom: 20px;
@@ -578,7 +551,7 @@ input: focus {
 
 .sidebar-item-title-link {
   color: #000000;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.2;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -593,7 +566,7 @@ input: focus {
 .sidebar-theme-link {
   line-height: 1.2;
   font-family: "OpenSansBold", sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   color: #000000;
   line-height: 40px;
   display: inline-block;  
@@ -619,7 +592,7 @@ input: focus {
   padding-left: 18px;
   width: 100%;
   height: 48px;
-  font-size: 24px;
+  font-size: 14px;
   flex-shrink: 0;
 }
 
@@ -655,7 +628,7 @@ input: focus {
   padding-left: 18px;
   height: 48px;
   margin-bottom: 18px;
-  font-size: 24px;
+  font-size: 14px;
   width: 100%;    
 }
 
@@ -667,7 +640,7 @@ input: focus {
   background-color: #b59f5b;
   color: #ffffff;
   font-family: "OpenSansBold", sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   line-height: normal;
   border: none;
   text-transform: uppercase;
@@ -678,7 +651,7 @@ input: focus {
   display: flex;
   flex-wrap: wrap;
   font-family: "OpenSansBold", sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   line-height: normal;
 }
 
@@ -707,7 +680,7 @@ input: focus {
 .sidebar-tag-link {
   font-family: "OpenSansBold", sans-serif;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .sidebar-themes {
@@ -721,14 +694,14 @@ input: focus {
 
 .sidebar-theme-link {
   font-family: "OpenSansBold", sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   color: #000000;
   line-height: 40px;
 }
 .sidebar-theme-item {
   font-family: "OpenSansBold", sans-serif;
   color: #b59f5b;
-  font-size: 24px;
+  font-size: 14px;
   line-height: normal;
   vertical-align: super;
 }
@@ -737,12 +710,12 @@ input: focus {
   display: block;
   width: 100%;
   height: 400px;
-  margin-left: 325px;
 }
+
 .shop-title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.1;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -795,23 +768,23 @@ input: focus {
   padding-top: 10px;
   padding-left: 40px;
   position: relative;
-  top: 290px;
+  top: 200px;
 }
 
 .card-title {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.6;
   text-transform: uppercase;
 }
 .shop-text {
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.6;
 }
 .shop-link {
   text-decoration: none;
   color: #b59f5b;
-  font-size: 24px;
+  font-size: 14px;
 }
 .shop-link a:hover {
   text-decoration: underline;
@@ -829,7 +802,7 @@ input: focus {
   background-position: right 90% bottom 90% ;
   background-color: #b59f5b;
   height: 48px;
-  font-size: 24px;
+  font-size: 14px;
   border: 0;
   font-family: inherit;
   font-weight: 700;
@@ -856,12 +829,12 @@ input: focus {
   margin-left: 4px;
 }
 .actual-price {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 700;
   color: #000000;
 }
 .old-price {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 700;
   color: #000000;
   text-decoration: line-through;
@@ -870,7 +843,7 @@ input: focus {
 .footer-block {
  position: relative;
  height : 50px;
- top: 370px;
+ top: 250px;
  bottom : 0;
 }
 .address-block {
@@ -926,7 +899,7 @@ input: focus {
 }
 .copyright {
   text-align: center;
-  font-size: 24px;
+  font-size: 14px;
   color: #888888;
   margin-top: 74px;
 }
@@ -978,7 +951,7 @@ input: focus {
   padding-left: 140px;
   font-family: "OpenSansBold", sans-serif;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 14px;
   line-height: normal;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1014,7 +987,7 @@ input: focus {
   background-repeat: no-repeat;
   background-position: right 5px center;
   background-size: 16px;
-  font-size: 24px;
+  font-size: 14px;
   font-family: Arial, sans-serif;
   color: #333333;
   -webkit-appearance: none;
@@ -1023,7 +996,7 @@ input: focus {
 
 .radio-group {
   display: inline-block;
-  font-size: 24px;
+  font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-right: 80px;
@@ -1087,7 +1060,7 @@ span.field-group ~ label.radio-group {
 }
 .field textarea {
   font-family: "OpenSansBold", sans-serif;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .textarea {
@@ -1114,14 +1087,14 @@ span.field-group ~ label.radio-group {
     display: none;
   }
   .title {
-    font-size: 24px;
+    font-size: 12px;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 640px) {
   .title {
-    font-size: 24px;
+    font-size: 12px;
   }
 }
 @media (min-width: 641px) and (max-width: 1200px) (orientation: landscape) {
@@ -1129,10 +1102,10 @@ span.field-group ~ label.radio-group {
     width: 25%;
   }
   .trend-title {
-   font-size: 14px;
+   font-size: 12px;
  }
  .post-item-tags {
-  font-size: 14px;
+  font-size: 12px;
 }
 }
 @media (min-width: 641px) and (max-width: 1200px) (orientation: portrait) {
@@ -1140,10 +1113,10 @@ span.field-group ~ label.radio-group {
    width: 50%;
  }
  .trend-title {
-   font-size: 14px; 
+   font-size: 12px; 
  }
  .post-item-tags {
-  font-size: 14px;
+  font-size: 12px;
 }
 }
 @media (max-width: 640px) (orientation: portrait) {
@@ -1154,7 +1127,7 @@ span.field-group ~ label.radio-group {
    font-size: 14px; 
  }
  .post-item-tags {
-  font-size: 14px;
+  font-size: 12px;
 }
 }
 @media (max-width: 640px) (orientation: landscape) {
@@ -1162,9 +1135,9 @@ span.field-group ~ label.radio-group {
    width: 50%;
  }
  .trend-title {
-   font-size: 14px; 
+   font-size: 12px; 
  }
  .post-item-tags {
-  font-size: 14px;
+  font-size: 12px;
 }
 }
